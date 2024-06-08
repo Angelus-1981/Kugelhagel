@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="63d1-d47d-1a55-6076" name="Preussen" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="3c2e-756d-e8b8-08bb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" publicationId="0f5a-f65b-32e8-9be9" page="68-69">
+  <entryLinks>
+    <entryLink id="fd3c-a41d-dbfb-a9ca" name="Lützower Jäger" hidden="false" collective="false" import="true" targetId="f47e-9413-6390-31d5" type="selectionEntry">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1d64-e7cd-6521-c139" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="bd4e-0941-27a5-8247" name="Jägerbataillon" hidden="false" collective="false" import="true" targetId="3501-391c-2de1-d5f8" type="selectionEntry"/>
+    <entryLink id="7f40-2427-fcac-71f1" name="Fußartilleriebatterie" hidden="false" collective="false" import="true" targetId="bf18-f602-021f-e034" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="d9cf-e078-a1b1-eb40" value="1">
+          <repeats>
+            <repeat field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22d0-4211-7b42-450d" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="d9cf-e078-a1b1-eb40" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="554e-88c8-aafd-9644" name="Haubitzen Fußartilleriebatterie" hidden="false" collective="false" import="true" targetId="ff4e-41a6-cce6-2033" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="a96c-0c46-e5a9-e78d" value="1">
+          <repeats>
+            <repeat value="3" repeats="1" field="selections" scope="roster" childId="22d0-4211-7b42-450d" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="a96c-0c46-e5a9-e78d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="9703-3ee7-feb7-e2f8" name="Landwehrbataillon" hidden="false" collective="false" import="true" targetId="9dd8-0391-d4b8-d2d2" type="selectionEntry"/>
+    <entryLink id="18b2-042d-8c54-335e" name="Brigadekommandeur" hidden="false" collective="false" import="true" targetId="19cd-bb2f-5951-a7cf" type="selectionEntry">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ebf-aaf9-66f6-0d11" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0752-509a-71a3-8577" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="a81e-95e0-d4dd-4c6d" name="Divisionskommandeur" hidden="true" collective="false" import="true" targetId="d92b-7bc1-11bf-50f3" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="5ced-0d76-79a7-6ba9" value="1">
+          <repeats>
+            <repeat field="forces" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="2" field="forces" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="5ced-0d76-79a7-6ba9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="ecbe-42f5-1603-4b48" name="Berittene Artilleriebatterie" hidden="false" collective="false" import="true" targetId="60c3-f3e7-bec4-1b26" type="selectionEntry">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="99b7-89e9-a854-d6ca" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="99b7-89e9-a854-d6ca">
+          <repeats>
+            <repeat value="3" repeats="1" field="selections" scope="roster" childId="cb23-29e7-b2b0-e982" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="6ed7-84ee-f603-c044" name="Berittene Haubitzen Artilleriebatterie" hidden="false" collective="false" import="true" targetId="f783-119d-7aac-cf21" type="selectionEntry">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="0fd8-5324-5c4c-c08f" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="0fd8-5324-5c4c-c08f">
+          <repeats>
+            <repeat value="3" repeats="1" field="selections" scope="roster" childId="cb23-29e7-b2b0-e982" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f803-498c-e382-9c89" name="Dragonerregiment" hidden="false" collective="false" import="true" targetId="2f3b-e1b2-4288-7705" type="selectionEntry"/>
+    <entryLink id="d518-f0ae-c309-7bd4" name="Linienmusketierbataillon" hidden="false" collective="false" import="true" targetId="20f9-07bb-ec6e-244d" type="selectionEntry">
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="39a1-f2f-19f3-8ccf" shared="true" id="71aa-85db-9e03-bb76" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="9ecb-ce16-9520-7e70" name="Linienfüsilierbataillon" hidden="false" collective="false" import="true" targetId="82c4-0e99-0177-5e55" type="selectionEntry">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="39a1-f2f-19f3-8ccf" shared="true" id="ee19-0ef2-7e60-409d" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="44ea-10d9-d765-2e86" name="Husarenregiment" hidden="false" collective="false" import="true" targetId="e3ed-4c6a-b328-d49f" type="selectionEntry"/>
+    <entryLink id="10e6-54dc-ccb9-e813" name="Kürassierregiment" hidden="false" collective="false" import="true" targetId="eb88-a988-6da8-8395" type="selectionEntry"/>
+    <entryLink id="8591-10b8-cc69-e9e3" name="Uhlanenregiment" hidden="false" collective="false" import="true" targetId="0009-bf02-59fe-b7e0" type="selectionEntry"/>
+    <entryLink import="true" name="Landwehrkavallerieregiment" hidden="false" id="a745-5ddd-f812-05f8" type="selectionEntry" targetId="b3d8-5584-11de-1e0d"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="3501-391c-2de1-d5f8" name="Jägerbataillon" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="9b9d-df9d-247f-08a6" name="Jägerbataillon" hidden="false" targetId="fccd-cd85-b1f2-0fb0" type="profile" publicationId="0f5a-f65b-32e8-9be9" page="68"/>
+        <infoLink id="f0a5-dea2-3dd3-0a6c" name="Plänklereinheit" hidden="false" targetId="0174-ded3-8fcb-a82c" type="rule" publicationId="0f5a-f65b-32e8-9be9" page="68"/>
+        <infoLink id="ad0e-f1bf-6659-4f4b" name="Scharfschützen" hidden="false" targetId="f81b-f7b9-913c-252b" type="rule" publicationId="0f5a-f65b-32e8-9be9" page="68"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="aa5f-9ff3-289d-d136" name="Infanterie" hidden="false" targetId="ac16-6c76-be5c-0174" primary="true"/>
+        <categoryLink id="6146-18d1-13a3-a927" name="Offene Formation" hidden="false" targetId="9d5f-83f8-6340-8a9d" primary="false"/>
+        <categoryLink id="73e0-f1af-f0bd-a5e3" name="Standard-Inf" hidden="false" targetId="22d0-4211-7b42-450d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="125"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f47e-9413-6390-31d5" name="Lützower Jäger" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="a489-62d5-6907-1faa" name="Lützower Jäger" hidden="false" targetId="59c5-dc0d-ee09-e597" type="profile" publicationId="0f5a-f65b-32e8-9be9" page="68"/>
+        <infoLink id="cb9b-f8b2-1dcc-1f29" name="Plänklereinheit" hidden="false" targetId="0174-ded3-8fcb-a82c" type="rule" publicationId="0f5a-f65b-32e8-9be9" page="68"/>
+        <infoLink name="Scharfschützen" id="c244-4012-4889-074e" hidden="false" type="rule" publicationId="0f5a-f65b-32e8-9be9" page="68" targetId="f81b-f7b9-913c-252b"/>
+        <infoLink name="Alte Grummler" id="4abe-f5ce-76b8-d2d7" hidden="false" type="rule" publicationId="0f5a-f65b-32e8-9be9" page="68" targetId="c7c5-9eeb-7270-273a"/>
+        <infoLink name="Feuerüberfall" id="c575-e50f-a18e-de74" hidden="false" type="rule" publicationId="0f5a-f65b-32e8-9be9" page="68" targetId="b239-23d4-582b-ac85"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8ead-b2c4-425b-598b" name="Infanterie" hidden="false" targetId="ac16-6c76-be5c-0174" primary="true"/>
+        <categoryLink id="5aba-5513-0917-3914" name="Standard-Inf" hidden="false" targetId="22d0-4211-7b42-450d" primary="false"/>
+        <categoryLink targetId="9d5f-83f8-6340-8a9d" id="505-44cb-ec37-8f89" primary="false" name="Offene Formation"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="160"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3d8-5584-11de-1e0d" name="Landwehrkavallerieregiment" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="2200-a29e-5fb7-aacb" name="Landwehrkavallerieregiment" hidden="false" targetId="e953-83a9-fc8a-de64" type="profile"/>
+        <infoLink id="ba51-18eb-154c-cf27" name="Lanzenreiter" hidden="false" targetId="aa3a-56ce-7dc4-7f43" type="rule" publicationId="0f5a-f65b-32e8-9be9" page="69"/>
+        <infoLink id="f59d-51f6-5be9-c3fd" name="Vorsichtig" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" targetId="5895-55b2-b6d0-1b2e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ad92-b119-8a32-b1b4" name="Kavallerie" hidden="false" targetId="6a8e-f808-0566-f4c5" primary="true"/>
+        <categoryLink id="b39a-f53e-0854-417f" name="Geschlossene Formation" hidden="false" targetId="5ffa-b549-d6a5-7801" primary="false"/>
+        <categoryLink id="f8d5-624e-ba48-29cb" name="Geschlossene Formation Kavallerie" hidden="false" targetId="f7e6-223b-aab0-2b0f" primary="false"/>
+        <categoryLink id="f8c5-e021-3f18-3f01" name="Standard-Kav" hidden="false" targetId="cb23-29e7-b2b0-e982" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="160"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f3b-e1b2-4288-7705" name="Dragonerregiment" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="3ecd-45b6-df81-725f" name="Dragonerregiment" hidden="false" targetId="41c5-94a7-66f7-398d" type="profile"/>
+        <infoLink id="5270-1d80-11eb-a93c" name="Schockkavallerie +1" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" targetId="98fa-ad8b-bff5-ffc0" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="83b6-ec03-3602-3ff4" name="Kavallerie" hidden="false" targetId="6a8e-f808-0566-f4c5" primary="true"/>
+        <categoryLink id="e3c1-12da-024d-9608" name="Geschlossene Formation" hidden="false" targetId="5ffa-b549-d6a5-7801" primary="false"/>
+        <categoryLink id="687d-7a2d-cc3e-bd69" name="Geschlossene Formation Kavallerie" hidden="false" targetId="f7e6-223b-aab0-2b0f" primary="false"/>
+        <categoryLink id="412f-ee7a-c5ce-15f3" name="Standard-Kav" hidden="false" targetId="cb23-29e7-b2b0-e982" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="185"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf18-f602-021f-e034" name="Fußartilleriebatterie" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="2408-9e10-3d43-5a85" name="Fußartilleriebatterie" hidden="false" targetId="d53d-2904-0597-e20c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cbcd-a1b2-ab82-f6e9" name="Fußartillerie" hidden="false" targetId="1e1e-7117-264c-3b3f" primary="true"/>
+        <categoryLink id="871d-6a27-99e2-6613" name="keine Formation" hidden="false" targetId="8b21-6e29-df6e-c9d5" primary="false"/>
+        <categoryLink targetId="3e17-1b65-da9a-f4a9" id="b2e6-fe49-d003-99a7" primary="false" name="Artillerie"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="115"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff4e-41a6-cce6-2033" name="Haubitzen Fußartilleriebatterie" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="dcec-f73e-e4b8-dc24" name="Haubitzen Fußartilleriebatterie" hidden="false" targetId="7db7-29c1-033b-1197" type="profile"/>
+        <infoLink id="84d1-dbd0-48bb-85d2" name="Indirektes Feuer" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" targetId="4871-8fe3-5b5f-cdcd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7443-891c-1fd2-3ca8" name="Fußartillerie" hidden="false" targetId="1e1e-7117-264c-3b3f" primary="true"/>
+        <categoryLink id="3c27-e91d-5110-bb13" name="keine Formation" hidden="false" targetId="8b21-6e29-df6e-c9d5" primary="false"/>
+        <categoryLink targetId="3e17-1b65-da9a-f4a9" id="88d9-86a3-5819-a413" primary="false" name="Artillerie"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="90"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="60c3-f3e7-bec4-1b26" name="Berittene Artilleriebatterie" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="4297-e2e3-4681-5355" name="Berittene Artilleriebatterie" hidden="false" targetId="272d-a967-94e5-93ec" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f1ae-31a2-a0e6-c4b0" name="Berittene Artillerie" hidden="false" targetId="086f-ca18-17d0-81bf" primary="true"/>
+        <categoryLink id="b976-267b-dd7f-e913" name="keine Formation" hidden="false" targetId="8b21-6e29-df6e-c9d5" primary="false"/>
+        <categoryLink targetId="3e17-1b65-da9a-f4a9" id="3e46-4e62-ba92-80c2" primary="false" name="Artillerie"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="90"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d92b-7bc1-11bf-50f3" name="Divisionskommandeur" publicationId="0f5a-f65b-32e8-9be9" page="53" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="9851-bbac-031e-4aa1" name="Divisionskommandeur" hidden="false" targetId="f5cf-01dd-a0d8-6e7d" type="profile">
+          <modifiers>
+            <modifier type="set" field="51ca-634e-150f-0d95" value="3">
+              <conditions>
+                <condition field="selections" scope="d92b-7bc1-11bf-50f3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="upgrade" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="66f9-f453-84e0-7a05" name="Kommandeure" hidden="false" targetId="13d4-359e-17f5-e60f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0638-d5ba-ac38-f466" name="Upgrade Joker" publicationId="0f5a-f65b-32e8-9be9" page="53" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3798-54c5-ac59-883c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pkt" typeId="Punkte" value="20"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="19cd-bb2f-5951-a7cf" name="Brigadekommandeur" publicationId="0f5a-f65b-32e8-9be9" page="53" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="dca3-9aab-03b1-5882" name="Brigadekommandeur" hidden="false" targetId="14cf-f907-ecaa-bd11" type="profile">
+          <modifiers>
+            <modifier type="set" value="2" field="51ca-634e-150f-0d95">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="19cd-bb2f-5951-a7cf" childId="upgrade" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1861-f7aa-ed1d-cedf" name="Kommandeure" hidden="false" targetId="13d4-359e-17f5-e60f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d39f-41bf-9aeb-1cc8" name="Upgrade Joker" publicationId="0f5a-f65b-32e8-9be9" page="53" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf7f-aff3-99d0-c0a4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pkt" typeId="Punkte" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="20f9-07bb-ec6e-244d" name="Linienmusketierbataillon" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="2246-3c13-e6d7-83bf" name="Karree" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" targetId="7b87-caff-01fc-09be" type="rule"/>
+        <infoLink name="Linienmusketierbataillon" id="6a35-a5bd-8db3-023e" hidden="false" type="profile" targetId="512-f7e3-d9f7-eeb2" publicationId="0f5a-f65b-32e8-9be9" page="68"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="15d2-74e4-e29e-c401" name="Geschlossene Formation" hidden="false" targetId="5ffa-b549-d6a5-7801" primary="false"/>
+        <categoryLink id="a259-6061-3132-88b9" name="Standard-Inf" hidden="false" targetId="22d0-4211-7b42-450d" primary="false"/>
+        <categoryLink id="965b-9d28-ff66-75fc" name="Infanterie" hidden="false" targetId="ac16-6c76-be5c-0174" primary="true"/>
+        <categoryLink id="5f90-8ff5-b4bc-fdf7" name="Geschlossene Formation Infanterie" hidden="false" targetId="8d8b-27a9-8639-1b9c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="150"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Veteranen" hidden="false" id="5209-7497-276c-f495" type="selectionEntry" targetId="8c18-e9ed-e8a4-7849">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37f5-0ab1-063b-c6d1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="9dd8-0391-d4b8-d2d2" name="Landwehrbataillon" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="44ed-117c-4ec3-34c4" name="Vorsichtig" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" targetId="5895-55b2-b6d0-1b2e" type="rule"/>
+        <infoLink id="69b9-dddf-20ef-3223" name="Karree" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" targetId="7b87-caff-01fc-09be" type="rule"/>
+        <infoLink id="ef91-8051-0a6e-1a20" name="Landwehrbataillon" hidden="false" targetId="4684-9725-ec5d-59e3" type="profile" publicationId="0f5a-f65b-32e8-9be9" page="68"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c861-ef8a-0861-5967" name="Infanterie" hidden="false" targetId="ac16-6c76-be5c-0174" primary="true"/>
+        <categoryLink id="b709-12f1-4d25-e63d" name="Geschlossene Formation" hidden="false" targetId="5ffa-b549-d6a5-7801" primary="false"/>
+        <categoryLink id="5059-d5d8-65a1-49dd" name="Geschlossene Formation Infanterie" hidden="false" targetId="8d8b-27a9-8639-1b9c" primary="false"/>
+        <categoryLink id="7880-8609-25bb-a4e4" name="Standard-Inf" hidden="false" targetId="22d0-4211-7b42-450d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="135"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="82c4-0e99-0177-5e55" name="Linienfüsilierbataillon" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="f218-3a25-7f8d-9612" name="Linienfüsilierbataillon" publicationId="0f5a-f65b-32e8-9be9" page="81" hidden="false" targetId="71db-c49a-b0c5-03eb" type="profile"/>
+        <infoLink id="d79b-26be-d59b-3c31" name="Plänklereinheit" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" targetId="0174-ded3-8fcb-a82c" type="rule"/>
+        <infoLink id="25d6-9cc4-cf2b-1c2d" name="Karree" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" targetId="7b87-caff-01fc-09be" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="884d-52b0-3b94-bc9e" name="Infanterie" hidden="false" targetId="ac16-6c76-be5c-0174" primary="true"/>
+        <categoryLink id="c007-2e41-19fc-0308" name="Geschlossene Formation Infanterie" hidden="false" targetId="8d8b-27a9-8639-1b9c" primary="false"/>
+        <categoryLink id="95a4-6cf9-40f0-4e9e" name="Geschlossene Formation" hidden="false" targetId="5ffa-b549-d6a5-7801" primary="false"/>
+        <categoryLink id="3cd2-c6ab-c844-5b4a" name="Standard-Inf" hidden="false" targetId="22d0-4211-7b42-450d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="160"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Veteranen" hidden="false" id="c9ea-3fc8-bd1d-9251" type="selectionEntry" targetId="8c18-e9ed-e8a4-7849">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c22-9b8d-5bd7-aa7c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="eb88-a988-6da8-8395" name="Kürassierregiment" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="a62b-edd8-5693-3adb" name="Schockkavallerie +W3" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" targetId="26d8-4008-1181-695b" type="rule"/>
+        <infoLink name="Kürassierregiment" id="4e25-65ce-49c2-7acc" hidden="false" type="profile" targetId="64fc-7b11-cb88-c3df"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bed7-7bb1-c69f-4552" name="Kavallerie" hidden="false" targetId="6a8e-f808-0566-f4c5" primary="true"/>
+        <categoryLink id="32c7-a6ed-1a4d-fe18" name="Geschlossene Formation" hidden="false" targetId="5ffa-b549-d6a5-7801" primary="false"/>
+        <categoryLink id="e2f2-faa9-59da-8def" name="Geschlossene Formation Kavallerie" hidden="false" targetId="f7e6-223b-aab0-2b0f" primary="false"/>
+        <categoryLink id="959a-2e42-5fc0-4fa9" name="Standard-Kav" hidden="false" targetId="cb23-29e7-b2b0-e982" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="215"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0009-bf02-59fe-b7e0" name="Uhlanenregiment" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="f2bf-97c6-70f9-5d7a" name="Uhlanenregiment" hidden="false" targetId="e543-51ac-6f62-21c2" type="profile" publicationId="0f5a-f65b-32e8-9be9" page="69"/>
+        <infoLink id="d9fc-beba-fa92-1e91" name="Lanzenreiter" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" targetId="aa3a-56ce-7dc4-7f43" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="407f-b3fb-e1e8-f210" name="Kavallerie" hidden="false" targetId="6a8e-f808-0566-f4c5" primary="true"/>
+        <categoryLink id="b45e-f779-2a0a-8708" name="Geschlossene Formation Kavallerie" hidden="false" targetId="f7e6-223b-aab0-2b0f" primary="false"/>
+        <categoryLink id="ad25-9f96-99d3-51d2" name="Standard-Kav" hidden="false" targetId="cb23-29e7-b2b0-e982" primary="false"/>
+        <categoryLink id="acb2-b06a-740f-5ac8" name="Geschlossene Formation" hidden="false" targetId="5ffa-b549-d6a5-7801" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="180"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e3ed-4c6a-b328-d49f" name="Husarenregiment" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="455a-7ea9-c4ca-dd08" name="Husarenregiment" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" targetId="8a69-5015-765b-b8ed" type="profile"/>
+        <infoLink id="6759-f070-9e8d-4b31" name="Kundschafter" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" targetId="4191-f910-df9e-501a" type="rule"/>
+        <infoLink id="03ba-ea84-bcab-b756" name="Ungestüm" hidden="false" targetId="4b37-78fb-6165-dbbe" type="rule" publicationId="0f5a-f65b-32e8-9be9" page="69"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8d5e-782d-5cd6-77fe" name="Kavallerie" hidden="false" targetId="6a8e-f808-0566-f4c5" primary="true"/>
+        <categoryLink id="91fe-e8dc-dd92-c70f" name="Geschlossene Formation Kavallerie" hidden="false" targetId="f7e6-223b-aab0-2b0f" primary="false"/>
+        <categoryLink id="dc1f-5c56-7e18-b0f3" name="Standard-Kav" hidden="false" targetId="cb23-29e7-b2b0-e982" primary="false"/>
+        <categoryLink id="1079-da77-7cac-5569" name="Geschlossene Formation" hidden="false" targetId="5ffa-b549-d6a5-7801" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="185"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f783-119d-7aac-cf21" name="Berittene Haubitzen Artilleriebatterie" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="aba8-e03d-182b-68ed" name="Berittene Haubitzen Artilleriebatterie" publicationId="0f5a-f65b-32e8-9be9" page="82" hidden="false" targetId="c6cf-cd9e-2737-680b" type="profile"/>
+        <infoLink id="79da-bf0c-c463-3b4c" name="Indirektes Feuer" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" targetId="4871-8fe3-5b5f-cdcd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4462-8d80-8e25-1520" name="keine Formation" hidden="false" targetId="8b21-6e29-df6e-c9d5" primary="false"/>
+        <categoryLink id="f3c3-65cb-06dc-10b5" name="Berittene Artillerie" hidden="false" targetId="086f-ca18-17d0-81bf" primary="true"/>
+        <categoryLink targetId="3e17-1b65-da9a-f4a9" id="8de-bcd-512d-3356" primary="false" name="Artillerie"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="80"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Veteranen" hidden="false" id="8c18-e9ed-e8a4-7849" publicationId="0f5a-f65b-32e8-9be9">
+      <costs>
+        <cost name="Pkt" typeId="Punkte" value="25"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="8c18-e9ed-e8a4-7849" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atMost" value="0" field="selections" scope="force" childId="8c18-e9ed-e8a4-7849" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="8c6b-a7d1-8a27-fecf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Veteranen" id="619b-3245-8030-15b6" hidden="false" type="rule" targetId="da5c-fe8f-5750-8fe1"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="fccd-cd85-b1f2-0fb0" name="Jägerbataillon" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">2</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">3</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">2</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Offen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Klein</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">Musketen</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="59c5-dc0d-ee09-e597" name="Lützower Jäger" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">3</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">6</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">4</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Geschlossen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Standard</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">Musketen</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e953-83a9-fc8a-de64" name="Landwehrkavallerieregiment" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">-</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">6</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">3</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Geschlossen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Standard</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="41c5-94a7-66f7-398d" name="Dragonerregiment" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">-</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">8</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">3</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Geschlossen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Standard</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d53d-2904-0597-e20c" name="Fußartilleriebatterie" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">2</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">1</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">2</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">-</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">-</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">Kanonen</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7db7-29c1-033b-1197" name="Haubitzen Fußartilleriebatterie" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">2</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">1</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">2</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">-</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">-</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">Haubitzen</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="272d-a967-94e5-93ec" name="Berittene Artilleriebatterie" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">2</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">1</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">2</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">5+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">-</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">-</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">Kanonen</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f5cf-01dd-a0d8-6e7d" name="Divisionskommandeur" publicationId="0f5a-f65b-32e8-9be9" page="53" hidden="false" typeId="92e2-e959-5674-6ce5" typeName="Kommandeur">
+      <characteristics>
+        <characteristic name="Anzahl Joker" typeId="51ca-634e-150f-0d95">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="14cf-f907-ecaa-bd11" name="Brigadekommandeur" publicationId="0f5a-f65b-32e8-9be9" page="53" hidden="false" typeId="92e2-e959-5674-6ce5" typeName="Kommandeur">
+      <characteristics>
+        <characteristic name="Anzahl Joker" typeId="51ca-634e-150f-0d95">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4684-9725-ec5d-59e3" name="Landwehrbataillon" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">3</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">5</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">3</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Geschlossen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Standard</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">Musketen</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="71db-c49a-b0c5-03eb" name="Linienfüsilierbataillon" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">3</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">6</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">3</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Geschlossen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Standard</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">Musketen</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="64fc-7b11-cb88-c3df" name="Kürassierregiment" publicationId="0f5a-f65b-32e8-9be9" page="68" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">-</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">9</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">4</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">3+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Geschlossen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Standard</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e543-51ac-6f62-21c2" name="Uhlanenregiment" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">-</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">7</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">4</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Geschlossen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Standard</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8a69-5015-765b-b8ed" name="Husarenregiment" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">-</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">6</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">3</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Geschlossen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Standard</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f"/>
+      </characteristics>
+    </profile>
+    <profile id="c6cf-cd9e-2737-680b" name="Berittene Haubitzen Artilleriebatterie" publicationId="0f5a-f65b-32e8-9be9" page="69" hidden="false" typeId="ba0c-8f18-21de-414e" typeName="Einheit">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">2</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">1</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">2</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">5+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">-</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">-</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">Haubitzen</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Linienmusketierbataillon" typeId="ba0c-8f18-21de-414e" typeName="Einheit" hidden="false" id="512-f7e3-d9f7-eeb2" publicationId="0f5a-f65b-32e8-9be9" page="68">
+      <characteristics>
+        <characteristic name="Feuerkraft" typeId="5938-9304-522a-110b">3</characteristic>
+        <characteristic name="Nahkampf" typeId="cf40-dac7-e51c-1320">6</characteristic>
+        <characteristic name="Widerstand" typeId="f514-2ec0-1f0b-7b0f">3</characteristic>
+        <characteristic name="Rettungswurf" typeId="c0c9-0439-5df8-6fbe">4+</characteristic>
+        <characteristic name="Formation" typeId="8af5-82af-d11a-bd1c">Geschlossen</characteristic>
+        <characteristic name="Größe" typeId="91ee-90b0-aaf8-a6e9">Standard</characteristic>
+        <characteristic name="Waffe" typeId="5c04-84f0-5165-d25f">Musketen</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <forceEntries>
+    <forceEntry name="Infanterie Brigade" id="39a1-f2f-19f3-8ccf" hidden="false" publicationId="0f5a-f65b-32e8-9be9" page="69">
+      <categoryLinks>
+        <categoryLink name="Kommandeure" hidden="false" id="d68e-a364-970f-db03" publicationId="0f5a-f65b-32e8-9be9" page="81" targetId="13d4-359e-17f5-e60f"/>
+        <categoryLink name="Infanterie" hidden="false" id="81b1-5f42-281b-b61b" publicationId="0f5a-f65b-32e8-9be9" page="81" targetId="ac16-6c76-be5c-0174"/>
+        <categoryLink name="Fußartillerie" hidden="false" id="3715-d08c-fee1-6d3f" targetId="1e1e-7117-264c-3b3f">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="59c4-e221-d165-e335" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="59c4-e221-d165-e335">
+              <repeats>
+                <repeat value="3" repeats="1" field="selections" scope="force" childId="8d8b-27a9-8639-1b9c" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Kavallerie Brigade" id="b329-623e-ef51-b05d" hidden="false" publicationId="0f5a-f65b-32e8-9be9" page="69">
+      <categoryLinks>
+        <categoryLink name="Kommandeure" hidden="false" id="33de-c050-4137-a4de" publicationId="0f5a-f65b-32e8-9be9" page="81" targetId="13d4-359e-17f5-e60f"/>
+        <categoryLink name="Kavallerie" hidden="false" id="194e-6122-8c68-9b04" publicationId="0f5a-f65b-32e8-9be9" page="81" targetId="6a8e-f808-0566-f4c5"/>
+        <categoryLink name="Berittene Artillerie" hidden="false" id="3217-c2db-af9f-a505" targetId="086f-ca18-17d0-81bf">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="6e27-6156-b7e6-771f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="6e27-6156-b7e6-771f">
+              <repeats>
+                <repeat value="3" repeats="1" field="selections" scope="force" childId="f7e6-223b-aab0-2b0f" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+</catalogue>
