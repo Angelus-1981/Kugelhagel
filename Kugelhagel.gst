@@ -78,7 +78,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Garde" hidden="false" id="e6fd-7d30-ac78-476c" targetId="192d-37f4-a0ff-389c" type="category">
+        <categoryLink name="Garde" hidden="false" id="e6fd-7d30-ac78-476c" targetId="192d-37f4-a0ff-389c">
           <constraints>
             <constraint type="max" value="0" field="selections" scope="force" shared="true" id="51d6-5649-341b-e985" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
@@ -139,7 +139,7 @@ Artillerieeinheiten dürfen nicht defensives Feier als Angriffsreaktion wählen,
       <description>Die Einheit muss immer, wenn sich die Möglichkeit ergibt, einen Gegenangriff durchführen. Sie addiert grundsätzlich 5 cm zu ihrer Angriffsbewegung hinzu.</description>
     </rule>
     <rule id="437c-ffed-ec23-d02d" name="Starrsinning" publicationId="0f5a-f65b-32e8-9be9" page="41" hidden="false">
-      <description>Die Einheit darf 3 verpatzte Trefferwürfe im Angriff wiederholen. Dies gilt nur bei Erstkontakt mit einer Einheit, nicht in bestehenden Nahkämpfen.</description>
+      <description>Die Einheit beharrt auf ihrem Standpunkt und ihrer Stellung. Sue ignoriert den ersten fälligen Moralwerttest im Spiel. Es wird angenommen sie hat ihn bestanden.</description>
     </rule>
     <rule id="da5c-fe8f-5750-8fe1" name="Veteranen" publicationId="0f5a-f65b-32e8-9be9" page="41" hidden="false">
       <description>Einheiten mit Veteranenfähigkeit erhalten einen 4+ Rettungswurf gegen Unordnung durch Beschuss. Zusätzlich erhalten sie diesen Rettungswurf wenn die Unordnung durch eine fliehende oder ausweichende Einheit verursacht wird, die keinen Veteranenstatus hat. Verliert die Einheit einen Moralwerttest und muss selber ausweichen, steht ihr gegen diese Unordnung der Rettungswurf nicht zu.</description>
