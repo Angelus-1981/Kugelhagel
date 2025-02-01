@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3c2e-756d-e8b8-08bb" name="Kugelhagel" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="3c2e-756d-e8b8-08bb" name="Kugelhagel" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="0f5a-f65b-32e8-9be9" name="Kugelhagel 3. Auflage"/>
   </publications>
